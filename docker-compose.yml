@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  super-digital-api:
+    image: super-digital-api
+    container_name: super-digital-api
+    ports:
+      - 5000:80
+    build:
+      context: .
+      dockerfile: src/Superdigital.Api/Dockerfile
+  mongo:
+    image: mongo
+    container_name: super-digital-mongo
+    ports:
+      - "27017:27017"
+  mongo-express:
+    image: mongo-express
+    container_name: super-digital-mongo-express
+    ports:
+      - '8081:8081'
+    depends_on:
+      - mongo
+  #super-digital-app:
+  #  image: super-digital-app
+  #  container_name: super-digital-app
+  #  build:
+  #    context: src/Superdigital.Painel/ClientApp
+  #    dockerfile: Dockerfile
+  #  ports:
+  #     - '4200:4200'

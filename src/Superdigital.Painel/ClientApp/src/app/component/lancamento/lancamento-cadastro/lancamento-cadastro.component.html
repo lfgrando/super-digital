@@ -1,0 +1,96 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="header-icon">
+      <i class="fa fa-bank"></i>
+    </div>
+    <div class="header-title">
+      <h1>Lançamento</h1>
+      <small>Cadastro de lançamento.</small>
+    </div>
+  </section>
+  <!-- Main content -->
+  <section class="content">
+    <div class="row">
+      <!-- Form controls -->
+      <div class="col-sm-12">
+        <div class="panel panel-bd ">
+          <div class="panel-heading">
+            <div class="btn-group" id="buttonexport">
+              <a href="javascript:;">
+                <h4>Cadastrar Lançamento</h4>
+              </a>
+            </div>
+          </div>
+          <div class="panel-body">
+            <form [formGroup]="cadastroLancamento" (submit)="add()">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Tipo de operação</label>
+                    <select class="form-control" formControlName="eOperacao" id="eOperacao" required (change)="updateOperation()">
+                      <option [ngValue]="-1" disabled hidden>Selecione...</option>
+                      <option [ngValue]="0">Depósito</option>
+                      <option [ngValue]="1">Saque</option>
+                      <option [ngValue]="2">Transferência</option>
+                    </select>
+                    <div *ngIf="submitted && f.eOperacao.errors">
+                      <div *ngIf="f.eOperacao.errors.required" class="text-danger small">* O tipo de operação é obrigatório.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Valor</label>
+                    <input type="text" class="form-control" formControlName="valor" placeholder="Informe o valor" currencyMask [options]="{ prefix: '', thousands: '.', decimal: ',' }">
+                    <div *ngIf="submitted && f.valor.errors ">
+                      <div *ngIf="f.valor.errors.required" class="text-danger small">* O nome é obrigatório.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3" *ngIf="divContaOrigem">
+                  <div class="form-group">
+                    <label>Conta origem</label>
+                    <select class="form-control" id="idContaOrigem" formControlName="idContaOrigem" required>
+                      <option value="-1" disabled hidden>Selecione...</option>
+                      <option *ngFor="let item of contas" value="{{item.id}}">
+                        {{item.numero + " - " + item.cliente.nome }}
+                      </option>
+                    </select>
+                    <div *ngIf="submitted && f.idContaOrigem.errors">
+                      <div *ngIf="f.idContaOrigem.errors.required" class="text-danger small">* A conta de origem é obrigatória.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3" *ngIf="divContaDestino">
+                  <div class="form-group">
+                    <label>Conta destino</label>
+                    <select class="form-control" id="idContaDestino" formControlName="idContaDestino" required>
+                      <option value="-1" disabled hidden>Selecione...</option>
+                      <option *ngFor="let item of contas" value="{{item.id}}">
+                        {{item.numero + " - " + item.cliente.nome }}
+                      </option>
+                    </select>
+                    <div *ngIf="submitted && f.idContaDestino.errors">
+                      <div *ngIf="f.idContaDestino.errors.required" class="text-danger small">* A conta de destino é obrigatória.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                
+              </div>
+              <hr />
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="reset-button" style="float: right">
+                    <button type="submit" href="#" class="btn btn-success"><i class="fa fa-check"></i> Salvar</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.content -->

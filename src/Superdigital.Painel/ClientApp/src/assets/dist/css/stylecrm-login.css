@@ -1,0 +1,68 @@
+.panel-custom > .custom_head {
+    color: #060606;
+    background-color: #b1d3db;
+    border-color: #b1eaec;
+    padding: 15px 10px 15px 15px;
+}
+
+.login-area {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.login-wrapper {
+    padding: 10px;
+}
+
+.container-center {
+    max-width: 400px;
+    margin: 10% auto 0;
+    padding: 20px;
+}
+
+.view-header .header-icon {
+    font-size: 60px;
+    color: #009688;
+    width: 68px;
+    float: left;
+    margin-top: -8px;
+    line-height: 0;
+}
+
+.view-header .header-title {
+    margin-left: 68px;
+}
+
+.view-header .header-title h3 {
+    margin-bottom: 2px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-title strong {
+    font-size: 12px;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}

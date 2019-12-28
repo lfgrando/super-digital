@@ -1,0 +1,9 @@
+﻿using System;
+
+namespace Superdigital.Infra.CrossCutting.Configuration
+{
+    public static class Settings
+    {
+        public static readonly string Secret = "fedaf7d8863b48e197b9287d492b708e";
+    }
+}

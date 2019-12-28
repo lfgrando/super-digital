@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{EE896052-DEF1-4875-B280-9B702E9085AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{888513EA-078A-49C8-8EFD-8364E62D7B51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{25F6E47F-AD93-464E-83FA-FBA91E86C4D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{0C367F5F-0E6A-4EBE-B3A3-E4AB39807688}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{B62864AC-AB84-48B2-8BF8-9979F31655F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superdigital.Api", "src\Superdigital.Api\Superdigital.Api.csproj", "{67B219CD-19D4-4512-AEAD-BD87387373DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superdigital.Application", "src\Superdigital.Application\Superdigital.Application.csproj", "{3047A74E-CD9B-4151-88A7-A1D810D71CF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superdigital.Domain", "src\Superdigital.Domain\Superdigital.Domain.csproj", "{88CD56B1-99F0-42EA-9B8B-F0A46F9E7C82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{68130309-6A77-496D-807F-4A205AFB9919}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{7C51C46C-EC8E-4111-8A8D-6E8588F989E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{39D0C77F-21B7-4E17-A67C-DAF0DCB31A17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superdigital.Infra.Data", "src\Superdigital.Infra.Data\Superdigital.Infra.Data.csproj", "{2B72C571-973D-4BF4-8027-4BDD0F0CAFAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superdigital.Tests.UnitTests", "tests\Superdigital.Tests.UnitTests\Superdigital.Tests.UnitTests.csproj", "{5A05F600-DACA-457E-B64D-053A2B30BC03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superdigital.Infra.CrossCutting.Extension", "src\Superdigital.Infra.CrossCutting.Extension\Superdigital.Infra.CrossCutting.Extension.csproj", "{92FA903F-5257-4A3B-B295-8686FB85D948}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{567B0C70-EFEB-4234-A148-FF5071074A26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superdigital.Infra.CrossCutting.Configuration", "src\Superdigital.Infra.CrossCutting.Configuration\Superdigital.Infra.CrossCutting.Configuration.csproj", "{EC51E95E-D510-46C7-9BE1-4E1FFA2E4E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superdigital.Painel", "src\Superdigital.Painel\Superdigital.Painel.csproj", "{E239C511-2078-4801-8A46-5DDF064BF87F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67B219CD-19D4-4512-AEAD-BD87387373DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B219CD-19D4-4512-AEAD-BD87387373DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B219CD-19D4-4512-AEAD-BD87387373DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B219CD-19D4-4512-AEAD-BD87387373DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3047A74E-CD9B-4151-88A7-A1D810D71CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3047A74E-CD9B-4151-88A7-A1D810D71CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3047A74E-CD9B-4151-88A7-A1D810D71CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3047A74E-CD9B-4151-88A7-A1D810D71CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88CD56B1-99F0-42EA-9B8B-F0A46F9E7C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88CD56B1-99F0-42EA-9B8B-F0A46F9E7C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88CD56B1-99F0-42EA-9B8B-F0A46F9E7C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88CD56B1-99F0-42EA-9B8B-F0A46F9E7C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B72C571-973D-4BF4-8027-4BDD0F0CAFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B72C571-973D-4BF4-8027-4BDD0F0CAFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B72C571-973D-4BF4-8027-4BDD0F0CAFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B72C571-973D-4BF4-8027-4BDD0F0CAFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A05F600-DACA-457E-B64D-053A2B30BC03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A05F600-DACA-457E-B64D-053A2B30BC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A05F600-DACA-457E-B64D-053A2B30BC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A05F600-DACA-457E-B64D-053A2B30BC03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92FA903F-5257-4A3B-B295-8686FB85D948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92FA903F-5257-4A3B-B295-8686FB85D948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92FA903F-5257-4A3B-B295-8686FB85D948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92FA903F-5257-4A3B-B295-8686FB85D948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567B0C70-EFEB-4234-A148-FF5071074A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567B0C70-EFEB-4234-A148-FF5071074A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567B0C70-EFEB-4234-A148-FF5071074A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567B0C70-EFEB-4234-A148-FF5071074A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC51E95E-D510-46C7-9BE1-4E1FFA2E4E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC51E95E-D510-46C7-9BE1-4E1FFA2E4E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC51E95E-D510-46C7-9BE1-4E1FFA2E4E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC51E95E-D510-46C7-9BE1-4E1FFA2E4E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E239C511-2078-4801-8A46-5DDF064BF87F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E239C511-2078-4801-8A46-5DDF064BF87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E239C511-2078-4801-8A46-5DDF064BF87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E239C511-2078-4801-8A46-5DDF064BF87F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67B219CD-19D4-4512-AEAD-BD87387373DF} = {EE896052-DEF1-4875-B280-9B702E9085AA}
+		{3047A74E-CD9B-4151-88A7-A1D810D71CF6} = {888513EA-078A-49C8-8EFD-8364E62D7B51}
+		{88CD56B1-99F0-42EA-9B8B-F0A46F9E7C82} = {0C367F5F-0E6A-4EBE-B3A3-E4AB39807688}
+		{68130309-6A77-496D-807F-4A205AFB9919} = {B62864AC-AB84-48B2-8BF8-9979F31655F9}
+		{7C51C46C-EC8E-4111-8A8D-6E8588F989E1} = {B62864AC-AB84-48B2-8BF8-9979F31655F9}
+		{2B72C571-973D-4BF4-8027-4BDD0F0CAFAD} = {68130309-6A77-496D-807F-4A205AFB9919}
+		{5A05F600-DACA-457E-B64D-053A2B30BC03} = {39D0C77F-21B7-4E17-A67C-DAF0DCB31A17}
+		{92FA903F-5257-4A3B-B295-8686FB85D948} = {7C51C46C-EC8E-4111-8A8D-6E8588F989E1}
+		{EC51E95E-D510-46C7-9BE1-4E1FFA2E4E72} = {7C51C46C-EC8E-4111-8A8D-6E8588F989E1}
+		{E239C511-2078-4801-8A46-5DDF064BF87F} = {25F6E47F-AD93-464E-83FA-FBA91E86C4D9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEBFBBD6-9EF3-46DF-BB2E-7FDB08D630BA}
+	EndGlobalSection
+EndGlobal

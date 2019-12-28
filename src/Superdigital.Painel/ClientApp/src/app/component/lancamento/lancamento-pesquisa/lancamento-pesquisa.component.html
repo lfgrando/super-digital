@@ -1,0 +1,55 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <div class="header-icon">
+    <i class="fa fa-bank"></i>
+  </div>
+  <div class="header-title">
+    <h1>Lançamentos</h1>
+    <small>Detalhes dos lançamentos.</small>
+  </div>
+</section>
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-bd">
+        <div class="panel-heading">
+          <div class="btn-group" id="buttonexport">
+            <a href="javascript:;">
+              <h4>Lançamentos da conta</h4>
+            </a>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table id="dataTableExample1" class="table table-bordered table-striped table-hover">
+                  <thead>
+                    <tr class="info">
+                      <th>Operação</th>
+                      <th>Valor</th>
+                      <th>Conta origem</th>
+                      <th>Conta destino</th>
+                      <th>Data da operação</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let item of lancamento">
+                      <td>{{item.eOperacaoDescricao}}</td>
+                      <td>{{item.valorFormatado}}</td>
+                      <td>{{(item.contaOrigem && item.contaOrigem.numero) ? item.contaOrigem.numero : ''}}</td>
+                      <td>{{(item.contaDestino && item.contaDestino.numero) ? item.contaDestino.numero : ''}}</td>
+                      <td>{{item.dataCriacaoFormatada}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /.content -->
