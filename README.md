@@ -28,14 +28,14 @@
                                             <p>Abra o terminal e execute <code>git clone https://github.com/ranciaro/super-digital.git</code></p>
                                         </li>
                                         <li>
-                                            <p><b>Realize download do Docker</b></p>
+                                            <p><b>Realize o download do Docker</b></p>
                                             <p>Acesse a página oficial do Docker em: <a target="_blank" href="https://www.docker.com/">https://www.docker.com</a></p>
-                                            <p>Caso tenha alguma dúvida referente ao processo de instalação do Docker, acesse a documentação oficial em: <a target="_blank" href="https://docs.docker.com/">https://docs.docker.com/</a> e procure a sessão <code>get started</code>.</p>
+                                            <p>Caso tenha alguma dúvida referente ao processo de instalação do Docker, acesse a documentação oficial em: <a target="_blank" href="https://docs.docker.com/">https://docs.docker.com/</a> e procure a seção <code>get started</code>.</p>
                                         </li>
                                         <li>
                                             <p><b>Executando a aplicação localmente</b></p>
                                             <p>Utilizando o <code>CMD (prompt de comando)</code> navegue até a pasta do projeto baixado.</p>
-                                            <p>Exemplo: <code>cd C:\Users\Renan\source\repos\Superdigital</code></p>
+                                            <p>Exemplo: <code>cd C:\Users\Renan\source\repos\super-digital</code></p>
                                             <p>Em seguida, execute o seguinte comando: <code>docker-compose up --build -d</code></p>                                            
                                         </li>
                                         <li>
